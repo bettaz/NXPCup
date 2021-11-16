@@ -16,3 +16,12 @@ We also receive some materials like codes and reports from the last year group. 
 2. Check the latest rules of the NXP racing competition. 
 3. Still work on the [build environment](https://nxp.gitbook.io/hovergames/developerguide/tools/mcuxpresso). 
 4. Accomplish installing and running the [Gazebo](http://gazebosim.org/tutorials?tut=quick_start) simulation and QGroundControl. 
+
+> ### November 16th:
+> **Idea of PID control method:** 
+> The car is constantly running forward with a set velocity, then controls the steering in order to keep the car in track. 
+> Once the car is running successfully, then 1)increase the velocity 2)minimize the overshoot and maximize the respond speed
+> 1. extract a line from the camera image
+> 2. calculate the two distances between the car and both sides
+> 2. compare the d, use the error as the input for controller
+> 2. adjust the PID parameters 
