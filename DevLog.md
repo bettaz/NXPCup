@@ -1,7 +1,7 @@
 
 # NXP Cup 
 
-**Brief summarized development log(diary):**
+**Brief summarized development log(diary):**  [Markdown syntax](markdownguide.org/basic-syntax/)
 
 ### October 8th:
 The very first meeting of the industrial project group. We get introduced with the [NXP project](https://nxp.gitbook.io/nxp-cup/), make acquaintance with out tutor and know the colleages from the same lab room.
