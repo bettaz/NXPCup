@@ -9,7 +9,7 @@ We also receive some materials like codes and reports from the last year group. 
 
 ### October 15th:
 1. Work on different compiling environment(Download softwares...) 
-1. We divide the group and try to understand the framework of the project.  
+2. We divide the group and try to understand the framework of the project.  
 
 ### October 22nd:
 1. Complete the team registration. 
@@ -25,3 +25,7 @@ We also receive some materials like codes and reports from the last year group. 
 > 2. calculate the two distances between the car and both sides
 > 2. compare the d, use the error as the input for controller
 > 2. adjust the PID parameters 
+
+### November 19th:
+1. Got access to [NXP Course](https://courses.iealearning.org/courses/course-v1:IEA+NXP+2021/course/). 
+2. Worked on settings up [NXP Gazebo](https://nxp.gitbook.io/nxp-cup/gazebo/milestone-1-intro-to-nxp-gazebo-and-ros/installation-of-nxp-gazebo-1) environment
