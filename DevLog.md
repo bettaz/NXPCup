@@ -29,3 +29,8 @@ We also receive some materials like codes and reports from the last year group. 
 ### November 19th:
 1. Got access to [NXP Course](https://courses.iealearning.org/courses/course-v1:IEA+NXP+2021/course/). 
 2. Worked on settings up [NXP Gazebo](https://nxp.gitbook.io/nxp-cup/gazebo/milestone-1-intro-to-nxp-gazebo-and-ros/installation-of-nxp-gazebo-1) environment
+
+### Novenmber 26th:
+We had an online meeting with the other teams instructors and got accessed to the online course. This helped us build up the knowledge framework and provided indexes of many materials.
+
+### December 3rd:
