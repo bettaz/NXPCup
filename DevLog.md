@@ -34,4 +34,10 @@ We had an online meeting with the other teams instructors and got access to the 
 
 ### Novenmber 26th:
 We successfully set uo the Gazebo simulator. But the repository from NXP CUP summer camp didn't work as our expectation
+
 ### December 3rd:
+Accessed the Pixy2 camera from the computer, we could see what the camera would see.
+Managed to put a hello world example project on the car, and run it from the computer.
+
+### December 10th:
+We managed to run NXP Gazebo Summer Camp simulation. (apriltags repos are still wrong, they should be removed from `gen_params_milestone4.json`, and aimline follow should be changed to python, as explained [here](https://nxp.gitbook.io/nxp-cup/gazebo/milestone-1-intro-to-nxp-gazebo-and-ros/change-between-c++-and-python))
