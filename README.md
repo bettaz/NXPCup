@@ -6,3 +6,11 @@ Industrial proj
 
 
 [NXP Issue Log](https://docs.google.com/document/d/1cK3jTuf8C7oN0TY4DB1Q-S80q4x-OqfHRKSxHm6Nyq0/edit)
+
+# Raspberry configuration
+connection command: ssh pi@raspberrypi.local
+ssh pwd: raspberrypy
+raspberry wifi preset:
+- SSID: Betta-fy
+- PWD: vannozzo20
+
