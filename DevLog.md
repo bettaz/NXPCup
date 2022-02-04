@@ -1,8 +1,17 @@
 
 # NXP Cup 
 
-**Brief summarized development log(diary):**  [Markdown syntax](markdownguide.org/basic-syntax/)
+**Brief summarized development log(diary):**  [Markdown syntax](https://www.markdownguide.org/basic-syntax/#code)
+## Semester 2
+### Feberary 4th:
+Due to the fact that we missed three weeks of the project, out tutor added the plan back for us. We are having a more intensive schedule now. The new rules and schdule is now published officially. We have one month to develop our code and the qualification will be held in March.
+(The NXP CUP gitbook has a lot new useful updates, and we are benefiting a lot from it.) Now we understand the all framework much better.
+1. PWM motor driving test completed
+2. Assembly of the kit double checked
+3. Rhaspberry setup - able to connect via WIFI
 
+
+## Semester 1
 ### October 8th:
 The very first meeting of the industrial project group. We get introduced with the [NXP project](https://nxp.gitbook.io/nxp-cup/), make acquaintance with out tutor and know the colleages from the same lab room.
 We also receive some materials like codes and reports from the last year group. With that we are able to get some useful infomation and make a general plan for this project.
@@ -41,3 +50,5 @@ Managed to put a hello world example project on the car, and run it from the com
 
 ### December 10th:
 We managed to run NXP Gazebo Summer Camp simulation. (apriltags repos are still wrong, they should be removed from `gen_params_milestone4.json`, and aimline follow should be changed to python, as explained [here](https://nxp.gitbook.io/nxp-cup/gazebo/milestone-1-intro-to-nxp-gazebo-and-ros/change-between-c++-and-python))
+
+
