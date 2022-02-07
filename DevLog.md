@@ -3,6 +3,8 @@
 
 **Brief summarized development log(diary):**  [Markdown syntax](https://www.markdownguide.org/basic-syntax/#code)
 ## Semester 2
+### Feberary 7th:
+We are currently working on three branches: a)Main algorithm development b)RaspberryPi remote control implementation, which means we might be able to send commands via WIFI to the console running on the raspberry pi and then indirectly control the flight board c)Gazebo simulation, to move the code from the ROS simulation to the firmwave.
 ### Feberary 4th:
 Due to the fact that we missed three weeks of the project, out tutor added the plan back for us. We are having a more intensive schedule now. The new rules and schdule is now published officially. We have one month to develop our code and the qualification will be held in March.
 (The NXP CUP gitbook has a lot new useful updates, and we are benefiting a lot from it.) Now we understand the all framework much better.
