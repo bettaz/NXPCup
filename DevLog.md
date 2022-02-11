@@ -3,14 +3,22 @@
 
 **Brief summarized development log(diary):**  [Markdown syntax](https://www.markdownguide.org/basic-syntax/#code)
 ## Semester 2
+### February 11st:
+Continue working for the three branches
+
 ### Feberary 7th:
 We are currently working on three branches: 
 
-a) Main algorithm development
+1. Main algorithm development
 
-b) RaspberryPi remote control implementation, which means we might be able to send commands via WIFI to the console running on the raspberry pi and then indirectly control the flight board 
+2. RaspberryPi remote control implementation, which means we might be able to send commands via WIFI to the console running on the raspberry pi and then indirectly control the flight board. 
+> This is achieved by Alessio, with installing the Manjero OS and the QGroundControl on it. Now the raspberryPi can function as a onboard computer which: 
+> 1. could be controlled remotely to send instructions(commands) to the FMU, 
+> 2. execute computationally expensive tasks offline,
+> 3. could be used in a low input current(1 Ample), which can be powered up by a portable power bank with light weight.  
 
-c) Gazebo simulation, to move the code from the ROS simulation to the firmwave.
+3. Gazebo simulation, to move the code from the ROS simulation to the firmwave.
+> This is somehow done with the help of our tutor Mr.Rodriguez. Now the Gazebo simulation is working.
 
 ### Feberary 4th:
 Due to the fact that we missed three weeks of the project, out tutor added the plan back for us. We are having a more intensive schedule now. The new rules and schdule is now published officially. We have one month to develop our code and the qualification will be held in March.
