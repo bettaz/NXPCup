@@ -3,6 +3,13 @@
 
 **Brief summarized development log(diary):**  [Markdown syntax](https://www.markdownguide.org/basic-syntax/#code)
 ## Semester 2
+### February 21st:
+Now the Gazebo simulation is working, and we can change the settings of parameters in the code to see the performance
+> The next step is to move the code from simulation to the flight control board
+> 
+Successfully testing the NXPCup race module(included in the PX4 firmware), now the car is running and we have to develop our own control algorithm
+> The next step is to access the Pixy camera API and find the solution to extarct the proper line detection results and regulate the car's movement
+
 ### February 11st:
 Continue working for the three branches
 
