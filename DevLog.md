@@ -77,7 +77,7 @@ We managed to run NXP Gazebo Summer Camp simulation. (apriltags repos are still 
 
 ## Semester 2
 ### February 21th:
-Jamie's simulation now works because he changed gen_params.json `ros2_node_2`, specifically `linear_velocity`.
-David's simulation now works on the virtual machine too, after adding `import cv2` to the `ros2ws/src/nxp_cup_vision/nxp_cup_vision/nxp_track_vision.py`
-Alessio fixed the connections of the motor's and the steering, now  we are able to turn the motors and control the Pixy using our code.
-Yuyang updated the local PX4 repository, we're debugging why the simulation is not working for him.
+Jamie's simulation now works because he changed gen_params.json `ros2_node_2`, specifically `linear_velocity`.<br>
+David's simulation now works on the virtual machine too, after adding `import cv2` to the `ros2ws/src/nxp_cup_vision/nxp_cup_vision/nxp_track_vision.py`<br>
+Alessio fixed the connections of the motor's and the steering, now  we are able to turn the motors and control the Pixy using our code.<br>
+Yuyang updated the local PX4 repository, we're debugging why the simulation is not working for him.<br>
