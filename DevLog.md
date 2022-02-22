@@ -3,6 +3,9 @@
 
 **Brief summarized development log(diary):**  [Markdown syntax](https://www.markdownguide.org/basic-syntax/#code)
 ## Semester 2
+### February 22nd:
+The latest firmware is updated and modified, we expect it to work but there are still some issues. 
+
 ### February 21st:
 Now the Gazebo simulation is working, and we can change the settings of parameters in the code to see the performance
 > The next step is to move the code from simulation to the flight control board
