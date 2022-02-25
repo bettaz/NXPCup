@@ -2,12 +2,14 @@
 # NXP Cup 
 
 **Brief summarized development log(diary):**  [Markdown syntax](https://www.markdownguide.org/basic-syntax/#code)
-## Semester 2
+## Semester
 ### February 25th:
-1. Fixed the car assembly problems and the wiring.
+1. Fixed the car assembly problems and the wiring.(configure the car correctly) Now it is easier to set up a new vehicle. Just install everything, download our firmware, make and upload it to the board, configure the right parameters in QGroundControl. The race program will start automatically and the car will be armed by pressing and holding the safety switch button on the GPS, after which the control algorithm will be executed and the car will run.
 2. Checked the code from previous year students
-3. 
 
+> The next step is to configure the pixy camera and get the correct features in real time. Then we can start working on the control algorithms.
+> Note: There are some problems due to the version of PX4 firmware. The firmware version we use is 1.11.3 and some changes should be properly done.
+> 
 ### February 22nd:
 The latest firmware is updated and modified, we expect it to work but there are still some issues. 
 
