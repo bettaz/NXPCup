@@ -3,6 +3,11 @@
 
 **Brief summarized development log(diary):**  [Markdown syntax](https://www.markdownguide.org/basic-syntax/#code)
 ## Semester 2
+### February 25th:
+1. Fixed the car assembly problems and the wiring.
+2. Checked the code from previous year students
+3. 
+
 ### February 22nd:
 The latest firmware is updated and modified, we expect it to work but there are still some issues. 
 
