@@ -4,7 +4,12 @@
 **Brief summarized development log(diary):**  [Markdown syntax](https://www.markdownguide.org/basic-syntax/#code)
 ## Semester
 ### March 4th:
+We successfully implemented the first edition of our control algorithm by translating the code from Gazebo simulation to the firmware.
+> Now the car is running on the track, but sometimes it is not stable
+> 
+Now the problem is to deal with the line detection. We ask to buy a white plastic so that we can place it on the ground to increase the contrast for the pixy camera to better recognize the feature.
 
+We would like to use a CNN model to detect the line from the raw image but pixy camera only allows video transmitting via usb connection(So far there is no way to send the camera image via I2C connection). We are suggested to use Rhaspberry Pi to check the camera data.
 
 ### February 25th:
 1. Fixed the car assembly problems and the wiring.(configure the car correctly) Now it is easier to set up a new vehicle. Just install everything, download our firmware, make and upload it to the board, configure the right parameters in QGroundControl. The race program will start automatically and the car will be armed by pressing and holding the safety switch button on the GPS, after which the control algorithm will be executed and the car will run.
