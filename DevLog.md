@@ -2,12 +2,19 @@
 # NXP Cup 
 
 **Brief summarized development log(diary):**  [Markdown syntax](https://www.markdownguide.org/basic-syntax/#code)
-## Semester
+## Semester 2
+### March 11st:
+1. We copy everything to test the second robot car
+2. There are some ideas for improving the performance of line vector detection:
+> 1. modify and flash a customized version of firmware for Pixy2 camera
+> 2. wait for the white background and find the best configuration in the camera software
+> 3. communicate via RhaspberryPi the raw images to train a new robust model only used for line detection
+
 ### March 4th:
 We successfully implemented the first edition of our control algorithm by translating the code from Gazebo simulation to the firmware.
 > Now the car is running on the track, but sometimes it is not stable
 > 
-Now the problem is to deal with the line detection. We ask to buy a white plastic so that we can place it on the ground to increase the contrast for the pixy camera to better recognize the feature.
+Now the problem is to deal with the line detection. We ask to buy a white plastic so that we can place it on the ground to increase the contrast for the pixy camera to better detect the feature.
 
 We would like to use a CNN model to detect the line from the raw image but pixy camera only allows video transmitting via usb connection(So far there is no way to send the camera image via I2C connection). We are suggested to use Rhaspberry Pi to check the camera data.
 
