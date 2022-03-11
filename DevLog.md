@@ -4,6 +4,7 @@
 **Brief summarized development log(diary):**  [Markdown syntax](https://www.markdownguide.org/basic-syntax/#code)
 ## Semester 2
 ### March 11st:
+1. We are trying to apply homography to the detected vector, so that the inclination of the vector will be calibrated
 1. We copy everything to test the second robot car
 2. There are some ideas for improving the performance of line vector detection:
 > 1. modify and flash a customized version of firmware for Pixy2 camera
