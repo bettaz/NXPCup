@@ -3,6 +3,10 @@
 
 **Brief summarized development log(diary):**  [Markdown syntax](https://www.markdownguide.org/basic-syntax/#code)
 ## Semester 2
+### March 18th:
+1. Now the vectors will be transformed and corrected, with the help of a white background setup and proper configuration of the Pixy2 camera.
+2. We think of new control algorithm that might work on the car
+> There should be a delay about the car's action, because the camera somehow foresees the future track, and maybe we have to add a delay function.
 ### March 11st:
 1. We are trying to apply homography to the detected vector, so that the inclination of the vector will be calibrated
 1. We copy everything to test the second robot car
