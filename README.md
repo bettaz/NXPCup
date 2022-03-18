@@ -12,6 +12,7 @@ From the vectors we get from Pixy camera, we do the correction like this:
 
 This can help us calulate the average inclination of all the vectors.
 Then we can define the maximum cornering speed and angle if we want to go faster:
+
 ![](https://a.sidepodcast.com/content/2014/07/car-turning-top.jpg)
 
 
