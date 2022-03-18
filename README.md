@@ -6,10 +6,10 @@ Industrial proj
 
 ## Control Algorithm
 From the vectors we get from Pixy camera, we do the correction
-![apply homography to camera data](https://ibb.co/Dtj02Sr)
+![](https://ibb.co/Dtj02Sr)
 This can help us calulate the average inclination of the corner
 Then we can define the cornering speed and angle
-![https://a.sidepodcast.com/content/2014/07/car-turning-top.jpg]
+![](https://a.sidepodcast.com/content/2014/07/car-turning-top.jpg)
 
 
 ## Raspberry configuration
