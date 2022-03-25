@@ -3,6 +3,10 @@
 
 **Brief summarized development log(diary):**  [Markdown syntax](https://www.markdownguide.org/basic-syntax/#code)
 ## Semester 2
+### March 25th:
+> Thoughts about the vectors: filter the vectors that are changing too fast, so the steering will be smoother.
+> Thoughts about crossing the crossroad: filter the detected vectors that have too much inclination -> go straight consistently
+
 ### March 18th:
 1. Now the vectors will be transformed and corrected, with the help of a white background setup and proper configuration of the Pixy2 camera.
 2. We think of new control algorithm that might work on the car
