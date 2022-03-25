@@ -4,7 +4,13 @@
 **Brief summarized development log(diary):**  [Markdown syntax](https://www.markdownguide.org/basic-syntax/#code)
 ## Semester 2
 ### March 25th:
+We continue to work, improving our control algorithm. We are thinking of every solution that can help the car better recognize the track. 
+Now there are three situations: 
+1. there is no vector: we stopp the car. 
+2. one vector: some methods to fix. 
+3. more than 2 vectors: we extract the two biggest vectors and calculate the average inclination to determine the steering,  a constant motor speed value is published. Additionally, we still don't find out the relationship between the steering angle and speed(if we want to maximum the speed)
 > Thoughts about the vectors: filter the vectors that are changing too fast, so the steering will be smoother.
+> 
 > Thoughts about crossing the crossroad: filter the detected vectors that have too much inclination -> go straight consistently
 
 ### March 18th:
