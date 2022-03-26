@@ -3,11 +3,43 @@
 
 **Brief summarized development log(diary):**  [Markdown syntax](https://www.markdownguide.org/basic-syntax/#code)
 ## Semester 2
-### February 25th:
-1. Fixed the car assembly problems and the wiring.
-2. Checked the code from previous year students
-3. 
+### March 25th:
+We continue to work, improving our control algorithm. We are thinking of every solution that can help the car better recognize the track. 
+Now there are three situations: 
+1. there is no vector: we stopp the car. 
+2. one vector: some methods to fix. 
+3. more than 2 vectors: we extract the two biggest vectors and calculate the average inclination to determine the steering,  a constant motor speed value is published. Additionally, we still don't find out the relationship between the steering angle and speed(if we want to maximum the speed)
+> Thoughts about the vectors: filter the vectors that are changing too fast, so the steering will be smoother.
+> 
+> Thoughts about crossing the crossroad: filter the detected vectors that have too much inclination -> go straight consistently
 
+### March 18th:
+1. Now the vectors will be transformed and corrected, with the help of a white background setup and proper configuration of the Pixy2 camera.
+2. We think of new control algorithm that might work on the car
+> There should be a delay about the car's action, because the camera somehow foresees the future track, and maybe we have to add a delay function.
+### March 11st:
+1. We are trying to apply homography to the detected vector, so that the inclination of the vector will be calibrated
+1. We copy everything to test the second robot car
+2. There are some ideas for improving the performance of line vector detection:
+> 1. modify and flash a customized version of firmware for Pixy2 camera
+> 2. wait for the white background and find the best configuration in the camera software
+> 3. communicate via RhaspberryPi the raw images to train a new robust model only used for line detection
+
+### March 4th:
+We successfully implemented the first edition of our control algorithm by translating the code from Gazebo simulation to the firmware.
+> Now the car is running on the track, but sometimes it is not stable
+> 
+Now the problem is to deal with the line detection. We ask to buy a white plastic so that we can place it on the ground to increase the contrast for the pixy camera to better detect the feature.
+
+We would like to use a CNN model to detect the line from the raw image but pixy camera only allows video transmitting via usb connection(So far there is no way to send the camera image via I2C connection). We are suggested to use Rhaspberry Pi to check the camera data.
+
+### February 25th:
+1. Fixed the car assembly problems and the wiring.(configure the car correctly) Now it is easier to set up a new vehicle. Just install everything, download our firmware, make and upload it to the board, configure the right parameters in QGroundControl. The race program will start automatically and the car will be armed by pressing and holding the safety switch button on the GPS, after which the control algorithm will be executed and the car will run.
+2. Checked the code from previous year students
+
+> The next step is to configure the pixy camera and get the correct features in real time. Then we can start working on the control algorithms.
+> Note: There are some problems due to the version of PX4 firmware. The firmware version we use is 1.11.3 and some changes should be properly done.
+> We are working to fix the problem of git clone:[]
 ### February 22nd:
 The latest firmware is updated and modified, we expect it to work but there are still some issues. 
 
