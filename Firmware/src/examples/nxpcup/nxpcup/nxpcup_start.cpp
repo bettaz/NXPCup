@@ -59,7 +59,7 @@ void roverSteerSpeed(roverControl control, vehicle_attitude_setpoint_s &_att_sp)
 	Quatf qe{euler};
 
 	// Throttle control of the rover
-	_att_sp.thrust_body[0] = control.speed;
+	_att_sp.thrust_body[0] =0.02f;// control.speed*0.1f;
 
 	// Steering control of the Rover
 	_att_sp.q_d[0] = qe(0);
