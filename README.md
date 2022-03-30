@@ -15,6 +15,10 @@ Then we can define the maximum cornering speed and angle if we want to go faster
 
 ![](https://a.sidepodcast.com/content/2014/07/car-turning-top.jpg)
 
+Another Approach:
+
+Cluster all the vectors into two groups. First a threshold is set to filter all the noisy vectors, then applying homography and clustering method to the vectors to have two main groups. For that, we have to build a dataset to better visualize and test the performance.
+
 
 ## Raspberry configuration
 connection command: ssh pi@raspberrypi.local
