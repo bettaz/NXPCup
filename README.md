@@ -17,7 +17,7 @@ Then we can define the maximum cornering speed and angle if we want to go faster
 
 Another Approach:
 
-Cluster all the vectors into two groups. First a threshold is set to filter all the noisy vectors, then applying homography and clustering method to the vectors to have two main groups. For that, we have to build a dataset to better visualize and test the performance.
+Cluster all the vectors into two groups. In the case of more than 2 vectors, first a threshold is set to filter all the noisy vectors, then applying homography and clustering method to the vectors to have two main groups. Then we will be able to get two vectors and develop algorithms to keep the car in the middle of the track.
 
 
 ## Raspberry configuration
