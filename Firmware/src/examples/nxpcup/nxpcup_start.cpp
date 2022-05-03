@@ -1,43 +1,3 @@
-/****************************************************************************
- *
- *   Copyright 2019 NXP.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- *
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in
- *    the documentation and/or other materials provided with the
- *    distribution.
- * 3. Neither the name of the copyright holder nor the names of its
- *    contributors may be used to endorse or promote products derived
- *    from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
- * FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
- * COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
- * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
- * BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
- * OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
- * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
- * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
- * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- * POSSIBILITY OF SUCH DAMAGE.
- *
- ****************************************************************************/
-
-/**
- * @file nxpcup_main.cpp
- * Race code for NXP Cup
- *
- * @author Katrin Moritz
- */
-
 #include "nxpcup_start.h"
 
 #include "nxpcup_race.h"
@@ -52,14 +12,14 @@ bool threadIsRunning = false;
 void roverSteerSpeed(roverControl control, vehicle_attitude_setpoint_s &_att_sp)
 {
 	// Converting steering value from percent to euler angle
-	control.steer *= 60.0f; //max turn angle 60 degree
+	//control.steer = 1.0f; //max turn angle 60 degree
 
 	// Converting the euler angle into a quaternion for vehicle_attitude_setpoint
 	Eulerf euler{0.0, 0.0, control.steer};
 	Quatf qe{euler};
 
 	// Throttle control of the rover
-	_att_sp.thrust_body[0] =0.02f;// control.speed*0.1f;
+	_att_sp.thrust_body[0] =0.03f;// control.speed*0.1f;
 
 	// Steering control of the Rover
 	_att_sp.q_d[0] = qe(0);
@@ -82,6 +42,10 @@ int race_thread_main(int argc, char **argv)
 
 	uORB::Publication<vehicle_attitude_setpoint_s>		_att_sp_pub{ORB_ID(vehicle_attitude_setpoint)};
 	struct vehicle_attitude_setpoint_s			_att_sp;
+
+	struct vehicle_attitude_s vehicle_attitude;
+	uORB::Subscription vehicle_sub{ORB_ID(vehicle_attitude)};
+	vehicle_sub.copy(&vehicle_attitude);
 
 	/* Publication of uORB messages */
 	struct safety_s safety;
@@ -124,7 +88,7 @@ int race_thread_main(int argc, char **argv)
 				pixy.setLamp(false,false);	// Pixy: reset upper leds
 				// reset PWM outputs
 				motorControl.speed = 0.0f;
-				motorControl.steer = 0.0f;
+				//motorControl.steer = 0.0f;
 				break;
 			case 1:
 				// Setting vehicle to attitude control mode
@@ -136,12 +100,12 @@ int race_thread_main(int argc, char **argv)
 				start = true;			// create your own start condition
 				pixy.setLED(0,0,255);		// Pixy: set RGB led to blue
 				pixy.setLamp(true,false);	// Pixy: sets upper led
-
+				vehicle_sub.copy(&vehicle_attitude);
 				if (start) {
-					motorControl = raceTrack(pixy);
+					motorControl = raceTrack(pixy,Eulerf(Quaternionf(vehicle_attitude.q))(2));
 				} else {
 					motorControl.speed = 0.0f;
-					motorControl.steer = 0.0f;
+					motorControl.steer = Eulerf(Quaternionf(vehicle_attitude.q))(2);
 				}
 				break;
 			}

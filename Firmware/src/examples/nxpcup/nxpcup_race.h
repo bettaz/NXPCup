@@ -43,6 +43,7 @@
 #include <px4_defines.h>
 
 #include "Pixy2I2C_PX4.h"
+#include <uORB/topics/vehicle_attitude.h>
 
 struct roverControl {
 	float steer;
@@ -56,6 +57,6 @@ struct _vector {
 	float grad;
 };
 
-roverControl raceTrack(Pixy2 &pixy);
+roverControl raceTrack(Pixy2 &pixy, float yaw);
 
 #endif
