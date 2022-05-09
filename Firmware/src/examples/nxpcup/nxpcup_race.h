@@ -46,7 +46,7 @@
 #include <uORB/topics/vehicle_attitude.h>
 
 struct roverControl {
-	float steer;
+	float orientation;
 	float speed;
 };
 
